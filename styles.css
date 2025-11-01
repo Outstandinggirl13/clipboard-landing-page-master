@@ -75,6 +75,7 @@ ol {
     
     --gray-700: hsl(210, 10%, 33%);
     --gray-500: hsl(201, 11%, 66%);
+    --gray-100: hsl(220, 18%, 97%);
       
     --font-base: 'Bai Jamjuree', sans-serif;
 }
@@ -92,3 +93,252 @@ body {
 /* ===========================
    LAYOUT & ELEMENTS
    =========================== */
+
+.main {
+    background-image: url(/assets/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+ }  
+
+.history {
+    text-align: center;
+    padding: 124px 30px 80px;
+}
+
+.history__logo {
+    width: 124px;
+    height: 124px;
+    margin: 0 auto 64px;
+}
+
+.history__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.history__description {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin: 18px 0 48px;
+    color: var(--gray-500);
+}
+
+.download__btn {
+    display: block;
+    padding: 16px;
+    width: 100%;
+    border-radius: 50vh;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: white;
+}
+
+.download__btn--ios {
+    background-color: var(--green-500);
+    margin-bottom: 22px;
+    box-shadow: 0px 10px 30px -10px rgba(38, 186, 164, 0.4);
+}
+
+.download__btn--mac {
+    background-color: var(--blue-100);
+    box-shadow: 0px 10px 30px -10px rgba(97, 115, 255, 0.4);
+}
+
+.keep-track {
+    padding: 82px 30px;
+    text-align: center;
+}
+
+.keep-track__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+}
+
+.keep-track__description {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin: 16px 0 64px;
+    color: var(--gray-500);
+}
+
+.keep-track__list {
+    margin-top: 60px;
+}
+
+.keep-track__item {
+    margin-bottom: 52px;
+}
+
+.keep-track__item-title {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.keep-track__item-description {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: var(--gray-500);
+}
+
+.access {
+    padding: 52px 16px;
+    text-align: center;
+}
+
+.access__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+}
+
+.access__description {
+    margin: 18px 0 60px;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    padding: 0 14px;
+    color: var(--gray-500);
+}
+
+.workflow {
+    padding: 46px 30px;
+    text-align: center;
+}
+
+.workflow__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+}
+
+.workflow__description {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin: 14px 0 90px;
+    color: var(--gray-500);
+}
+
+.workflow__item {
+    margin-bottom: 56px;
+}
+
+.workflow__item-title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    margin: 36px 0 18px;
+}
+
+.workflow__item-title--text {
+    margin: 40px 0 18px;
+}
+
+.workflow__item-title--preview {
+    margin: 42px 0 18px;
+}
+
+.workflow__item-description {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: var(--gray-500);
+}
+
+.enterprises {
+    padding: 30px 118px;
+}
+
+.enterprises__logo {
+    margin: 0 auto;
+}
+
+.enterprises__logo--google {
+    width: 140px;
+    margin-bottom: 66px
+}
+
+.enterprises__logo--ibm {
+    width: 116px;
+    margin-bottom: 69px;
+}
+
+.enterprises__logo--microsoft {
+    width: 135px;
+    margin-bottom: 62px;
+}
+
+.enterprises__logo--hp {
+    width: 113px;
+    margin-bottom: 57px;
+}
+
+.enterprises__logo--vector {
+    width: 105px;
+}
+
+.download {
+    padding: 140px 32px 170px;
+    text-align: center;
+}
+
+.download__title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+}
+
+.download__description {
+    margin: 18px 0 48px;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: var(--gray-500);
+}
+
+.footer {
+    background-color: var(--gray-100);
+    text-align: center;
+}
+
+.footer__links-main {
+    padding: 52px 0;
+}
+
+.footer__logo {
+    width: 54px;
+    margin: 0 auto;
+}
+
+.footer__list {
+    margin: 48px 0 54px;
+}
+
+.footer__link {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 26px;
+}
+
+.footer__social {
+    display: flex;
+    padding: 0 112px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__attribution { 
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.footer__attribution-link { 
+    color: hsl(228, 45%, 44%); 
+}
