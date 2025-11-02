@@ -69,7 +69,9 @@ ol {
     /* Primary */
 
     --green-500: hsl(171, 66%, 44%);
+    --green-450: hsl(171, 51%, 59%);
     --blue-100: hsl(233, 100%, 69%);
+    --blue-50: hsl(232, 95%, 76%);
     
     /* Neutral */
     
@@ -149,6 +151,18 @@ body {
 .download__btn--mac {
     background-color: var(--blue-100);
     box-shadow: 0px 10px 30px -10px rgba(97, 115, 255, 0.4);
+}
+
+.download__btn--ios:hover,
+.download__btn--ios:active {
+    background-color: var(--green-450);
+    cursor: pointer;
+}
+
+.download__btn--mac:hover,
+.download__btn--mac:active {
+    background-color: var(--blue-50);
+    cursor: pointer;
 }
 
 .keep-track {
@@ -321,6 +335,18 @@ body {
     margin: 0 auto;
 }
 
+.footer__link:hover,
+.footer__link:active {
+    cursor: pointer;
+    color: var(--green-500);
+}
+
+.footer__social-link:hover path,
+.footer__social-link:active path{
+    cursor: pointer;
+    fill: var(--green-500);
+}
+
 .footer__attribution { 
     font-size: 1rem;
     padding: 1rem;
@@ -450,7 +476,7 @@ body {
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
+        gap: 80px;
     }
 
     .enterprises__logo {
@@ -460,22 +486,18 @@ body {
 
     .enterprises__logo--google {
         width: 11.5625rem;
-        margin: 0 6.1875rem 0 0;
     }
 
     .enterprises__logo--ibm {
         width: 8.6875rem;
-        margin: 0 5.9375rem 0 0;
     }
 
     .enterprises__logo--microsoft {
         width: 10.0625rem;
-        margin: 0 6.0625rem 0 0;
     }
 
     .enterprises__logo--hp {
         width: 8.4375rem;
-        margin: 0 5.875rem 0 0;
     }
 
     .enterprises__logo--vector {
@@ -550,6 +572,26 @@ body {
         flex-wrap: nowrap;
         justify-content: flex-start;
         gap: 0px;
+    }
+
+    .enterprises__logo--google {
+        margin: 0 6.1875rem 0 0;
+    }
+
+    .enterprises__logo--ibm {
+        margin: 0 5.9375rem 0 0;
+    }
+
+    .enterprises__logo--microsoft {
+        margin: 0 6.0625rem 0 0;
+    }
+
+    .enterprises__logo--hp {
+        margin: 0 5.875rem 0 0;
+    }
+
+    .enterprises__logo--vector {
+        width: 7.8125rem;
     }
 
     .footer__links-main {
