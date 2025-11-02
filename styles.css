@@ -113,13 +113,17 @@ body {
 
 .history__title {
     font-size: 32px;
+    font-size: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
     line-height: 40px;
+    line-height: clamp(2.5rem, 2.0599rem + 1.8779vw, 3.75rem);
     letter-spacing: -0.02em;
 }
 
 .history__description {
     font-size: 15px;
+    font-size: clamp(0.9375rem, 0.8275rem + 0.4695vw, 1.25rem);
     line-height: 26px;
+    line-height: clamp(1.625rem, 1.537rem + 0.3756vw, 1.875rem);
     letter-spacing: 0.04em;
     margin: 18px 0 48px;
     color: var(--gray-500);
@@ -157,7 +161,9 @@ body {
 .workflow__title,
 .download__title {
     font-size: 28px;
+    font-size: clamp(1.75rem, 1.5739rem + 0.7512vw, 2.25rem);
     line-height: 34px;
+    line-height: clamp(2.125rem, 1.9049rem + 0.939vw, 2.75rem);
     letter-spacing: -0.02em;
 }
 
@@ -168,7 +174,9 @@ body {
 .workflow__item-description,
 .download__description {
     font-size: 15px;
+    font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
     line-height: 26px;
+    line-height: clamp(1.625rem, 1.537rem + 0.3756vw, 1.875rem);
     letter-spacing: 0.04em;
     color: var(--gray-500);
 }
@@ -322,5 +330,207 @@ body {
 @media (min-width: 750px) {
     .main {
         background-image: url(assets/images/bg-header-desktop.png);
-     }  
+     }
+
+    .history {
+        padding: 130px 0px 80px;
+    }
+
+    .history__logo {
+        margin: 0 auto 54px;
+    }
+
+    .history__title {
+        letter-spacing: -0.035em;
+    }
+
+    .history__description {
+        letter-spacing: 0.0075em;
+        margin: 16px auto 48px;
+        max-width: 695px;
+    }
+
+    .history__btn-group,
+    .download__btn-group {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .download__btn {
+        padding: 16px;
+        margin: 0;
+        max-width: 228px;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+    }
+
+    .keep-track {
+        padding: 76px 0px 36px;
+    }
+
+    .keep-track__description {
+        max-width: 720px;
+        margin: 18px auto 80px;
+        letter-spacing: 0.01em;
+    }
+
+    .keep-track__group {
+        display: flex;
+        gap: 78px;
+    }
+
+    .keep-track__image {
+        position: relative;
+        left: -32px;
+        margin: 0;
+    }
+
+    .keep-track__list {
+        text-align: start;
+        margin-top: 68px;
+    }
+
+    .keep-track__item-description {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.0075em;
+        max-width: 350px;
+    }
+
+    .keep-track__item {
+        margin-bottom: 58px;
+    }
+
+    .access {
+        padding: 116px 0px 36px;
+        text-align: center;
+    }
+
+    .access__description {
+        margin: 18px auto 100px;
+        padding: 0;
+        max-width: 680px;
+        letter-spacing: 0.0075em;
+    }
+
+    .workflow {
+        padding: 36px 30px;
+        text-align: center;
+    }
+
+    .workflow__description {
+        margin: 16px 0 80px;
+        letter-spacing: 0.0075em;
+    }
+
+    .workflow__list {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+    }
+
+    .workflow__item {
+        max-width: 350px;
+    }
+
+    .workflow__item-description {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.0075em;
+    }
+
+    .workflow__item-title {
+        margin: 32px 0 18px;
+    }
+
+    .workflow__item-title--text {
+        margin: 40px 0 18px;
+    }
+    
+    .workflow__item-title--preview {
+        margin: 38px 0 18px;
+    }
+
+    .enterprises {
+        padding: 64px 0 16px;
+        display: flex;
+        align-items: center;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .enterprises__logo {
+        margin: 0;
+        height: 100%;
+    }
+
+    .enterprises__logo--google {
+        width: 185px;
+        margin: 0 99px 0 0;
+    }
+
+    .enterprises__logo--ibm {
+        width: 139px;
+        margin: 0 95px 0 0;
+    }
+
+    .enterprises__logo--microsoft {
+        width: 161px;
+        margin: 0 97px 0 0;
+    }
+
+    .enterprises__logo--hp {
+        width: 135px;
+        margin: 0 94px 0 0;
+    }
+
+    .enterprises__logo--vector {
+        width: 125px;
+    }
+
+    .download__description {
+        margin: 20px auto 48px;
+        max-width: 720px;
+        letter-spacing: 0.0075em;
+    }
+
+    .download {
+        padding: 140px 0 151px;
+    }
+
+    .footer__links-main {
+        display: grid;
+        grid-template-columns: 188px 1fr 120px;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 44px 0 40px;
+    }
+
+    .footer__logo {
+        margin: 0;
+    }
+
+    .footer__list {
+        display: flex;
+        text-align: start;
+        gap: 98px;
+        margin: 0;
+    }
+    
+    .footer__link {
+        margin-bottom: 20px;
+    }
+
+    .footer__item--install {
+        position: relative;
+        left: -20px;
+    }
+
+    .footer__social {
+        padding: 20px 0;
+        align-items: flex-start;
+    }
 }
