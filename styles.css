@@ -95,7 +95,7 @@ body {
    =========================== */
 
 .main {
-    background-image: url(/assets/images/bg-header-mobile.png);
+    background-image: url(assets/images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
  }  
@@ -128,7 +128,8 @@ body {
 .download__btn {
     display: block;
     padding: 16px;
-    width: 100%;
+    width: clamp(0px, 84vw, 350px);
+    margin: 0 auto;
     border-radius: 50vh;
     font-size: 18px;
     letter-spacing: 0.04em;
@@ -151,18 +152,33 @@ body {
     text-align: center;
 }
 
-.keep-track__title {
+.keep-track__title,
+.access__title,
+.workflow__title,
+.download__title {
     font-size: 28px;
     line-height: 34px;
     letter-spacing: -0.02em;
 }
 
-.keep-track__description {
+.keep-track__description,
+.keep-track__item-description,
+.access__description,
+.workflow__description,
+.workflow__item-description,
+.download__description {
     font-size: 15px;
     line-height: 26px;
     letter-spacing: 0.04em;
-    margin: 16px 0 64px;
     color: var(--gray-500);
+}
+
+.keep-track__description {
+    margin: 16px 0 64px;
+}
+
+.keep-track__image {
+    margin: 0 auto;
 }
 
 .keep-track__list {
@@ -180,31 +196,18 @@ body {
     margin-bottom: 10px;
 }
 
-.keep-track__item-description {
-    font-size: 15px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: var(--gray-500);
-}
-
 .access {
     padding: 52px 16px;
     text-align: center;
 }
 
-.access__title {
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-}
-
 .access__description {
     margin: 18px 0 60px;
-    font-size: 15px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
     padding: 0 14px;
-    color: var(--gray-500);
+}
+
+.access__image {
+    margin: 0 auto;
 }
 
 .workflow {
@@ -212,18 +215,8 @@ body {
     text-align: center;
 }
 
-.workflow__title {
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-}
-
 .workflow__description {
-    font-size: 15px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
     margin: 14px 0 90px;
-    color: var(--gray-500);
 }
 
 .workflow__item {
@@ -245,15 +238,8 @@ body {
     margin: 42px 0 18px;
 }
 
-.workflow__item-description {
-    font-size: 15px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: var(--gray-500);
-}
-
 .enterprises {
-    padding: 30px 118px;
+    padding: 30px 0;
 }
 
 .enterprises__logo {
@@ -289,18 +275,8 @@ body {
     text-align: center;
 }
 
-.download__title {
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-}
-
 .download__description {
     margin: 18px 0 48px;
-    font-size: 15px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-    color: var(--gray-500);
 }
 
 .footer {
@@ -341,4 +317,10 @@ body {
 
 .footer__attribution-link { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 750px) {
+    .main {
+        background-image: url(assets/images/bg-header-desktop.png);
+     }  
 }
