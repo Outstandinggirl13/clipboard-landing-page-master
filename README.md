@@ -1,92 +1,133 @@
-# Frontend Mentor - Clipboard landing page
+# Frontend Mentor - Clipboard landing page solution
 
-![Design preview for the Clipboard landing page coding challenge](preview.jpg)
+This is a solution to the [Clipboard landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](assets/images/screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [GitHub Pages](https://outstandinggirl13.github.io/clipboard-landing-page-master/)
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+1. Background images and viewport sizing
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I learned how to set a background image that scales with the viewport width. Using `background-size: contain` ensures the image adjusts properly without distortion.
 
-## Deploying your project
+```CSS
+.main {
+  background-image: url(assets/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+2. Responsive typography with `clamp()`
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+I used `clamp()` throughout my CSS to make text scale smoothly between minimum and maximum sizes. It helped maintain a consistent look across different screen widths.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```CSS
+.history__title {
+  font-size: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+  line-height: clamp(2.5rem, 2.0599rem + 1.8779vw, 3.75rem);
+}
+```
 
-## Create a custom `README.md`
+3. Using `filter: drop-shadow()` for irregular PNG shapes
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+I discovered that `box-shadow` doesn’t follow complex image contours. To apply shadows to PNGs with transparent areas, `filter: drop-shadow()` works much better.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```CSS
+.access__image {
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.1));
+}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+4. Making flexible layouts with `flex-wrap`
 
-## Submitting your solution
+I enjoyed using flex-wrap to handle items that need to wrap onto new rows when there isn’t enough horizontal space. It made the layout more adaptive and cleaner on smaller screens.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```CSS
+.enterprises {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  max-width: 69.375rem;
+  margin: 0 auto;
+  padding: 4rem 0 1rem;
+}
+```
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+5. Combining Grid and Flexbox
 
-## Sharing your solution
+I used Grid for the overall footer structure and Flexbox inside it for better control over links alignment. Mixing the two required some experimentation but gave me precise layout control.
 
-There are multiple places you can share your solution:
+```CSS
+.footer__links-main {
+  display: grid;
+  grid-template-columns: 0.234fr 1fr 7.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+  padding: 2.75rem 32px 2.5rem;
+}
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+.footer__list {
+  display: flex;
+  text-align: start;
+  gap: 6.125rem;
+  margin: 0;
+}
+```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+6. Positioning images precisely
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+For the desktop design, I learned to shift an image horizontally using `position: relative` and the `left` property.
 
-## Got feedback for us?
+```CSS
+.keep-track__image {
+  position: relative;
+  left: -32px;
+  margin: 0;
+}
+```
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi@frontendmentor.io.
+## Author
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- Website - [Outstandinggirl13](https://github.com/Outstandinggirl13)
+- Frontend Mentor - [@Outstandinggirl13](https://www.frontendmentor.io/profile/Outstandinggirl13)
 
-**Have fun building!** 🚀

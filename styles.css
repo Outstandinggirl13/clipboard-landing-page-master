@@ -353,7 +353,11 @@ body {
 }
 
 .footer__attribution-link { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
+}
+
+.footer__attribution-link:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 750px) {
