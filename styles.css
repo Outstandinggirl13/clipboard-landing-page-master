@@ -87,7 +87,7 @@ ol {
 body {
     font-family: var(--font-base);
     color: var(--gray-700);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /* ===========================
@@ -102,47 +102,47 @@ body {
 
 .history {
     text-align: center;
-    padding: 124px 30px 80px;
+    padding: 7.75rem 1.875rem 5rem;
 }
 
 .history__logo {
-    width: 124px;
-    height: 124px;
-    margin: 0 auto 64px;
+    width: 7.75rem;
+    height: 7.75rem;
+    margin: 0 auto 4rem;
 }
 
 .history__title {
-    font-size: 32px;
+    font-size: 2rem;
     font-size: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
-    line-height: 40px;
+    line-height: 2.5rem;
     line-height: clamp(2.5rem, 2.0599rem + 1.8779vw, 3.75rem);
     letter-spacing: -0.02em;
 }
 
 .history__description {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-size: clamp(0.9375rem, 0.8275rem + 0.4695vw, 1.25rem);
-    line-height: 26px;
+    line-height: 1.625rem;
     line-height: clamp(1.625rem, 1.537rem + 0.3756vw, 1.875rem);
     letter-spacing: 0.04em;
-    margin: 18px 0 48px;
+    margin: 1.125rem 0 3rem;
     color: var(--gray-500);
 }
 
 .download__btn {
     display: block;
-    padding: 16px;
+    padding: 1rem;
     width: clamp(0px, 84vw, 350px);
     margin: 0 auto;
     border-radius: 50vh;
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.04em;
     color: white;
 }
 
 .download__btn--ios {
     background-color: var(--green-500);
-    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
     box-shadow: 0px 10px 30px -10px rgba(38, 186, 164, 0.4);
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 .keep-track {
-    padding: 82px 30px;
+    padding: 5.125rem 1.875rem;
     text-align: center;
 }
 
@@ -160,9 +160,9 @@ body {
 .access__title,
 .workflow__title,
 .download__title {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-size: clamp(1.75rem, 1.5739rem + 0.7512vw, 2.25rem);
-    line-height: 34px;
+    line-height: 2.125rem;
     line-height: clamp(2.125rem, 1.9049rem + 0.939vw, 2.75rem);
     letter-spacing: -0.02em;
 }
@@ -173,16 +173,16 @@ body {
 .workflow__description,
 .workflow__item-description,
 .download__description {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
-    line-height: 26px;
+    line-height: 1.625rem;
     line-height: clamp(1.625rem, 1.537rem + 0.3756vw, 1.875rem);
     letter-spacing: 0.04em;
     color: var(--gray-500);
 }
 
 .keep-track__description {
-    margin: 16px 0 64px;
+    margin: 1rem 0 4rem;
 }
 
 .keep-track__image {
@@ -190,27 +190,27 @@ body {
 }
 
 .keep-track__list {
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .keep-track__item {
-    margin-bottom: 52px;
+    margin-bottom: 3.25rem;
 }
 
 .keep-track__item-title {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
     letter-spacing: -0.02em;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .access {
-    padding: 52px 16px;
+    padding: 3.25rem 1rem;
     text-align: center;
 }
 
 .access__description {
-    margin: 18px 0 60px;
+    margin: 1.125rem 0 3.75rem;
     padding: 0 14px;
 }
 
@@ -219,35 +219,35 @@ body {
 }
 
 .workflow {
-    padding: 46px 30px;
+    padding: 2.875rem 1.875rem;
     text-align: center;
 }
 
 .workflow__description {
-    margin: 14px 0 90px;
+    margin: 0.875rem 0 5.625rem;
 }
 
 .workflow__item {
-    margin-bottom: 56px;
+    margin-bottom: 3.5rem;
 }
 
 .workflow__item-title {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     letter-spacing: -0.02em;
-    margin: 36px 0 18px;
+    margin: 2.25rem 0 1.125rem;
 }
 
 .workflow__item-title--text {
-    margin: 40px 0 18px;
+    margin: 2.5rem 0 1.125rem;
 }
 
 .workflow__item-title--preview {
-    margin: 42px 0 18px;
+    margin: 2.625rem 0 1.125rem;
 }
 
 .enterprises {
-    padding: 30px 0;
+    padding: 1.875rem 0;
 }
 
 .enterprises__logo {
@@ -255,36 +255,36 @@ body {
 }
 
 .enterprises__logo--google {
-    width: 140px;
-    margin-bottom: 66px
+    width: 8.75rem;
+    margin-bottom: 4.125rem;
 }
 
 .enterprises__logo--ibm {
-    width: 116px;
-    margin-bottom: 69px;
+    width: 7.25rem;
+    margin-bottom: 4.3125rem;
 }
 
 .enterprises__logo--microsoft {
-    width: 135px;
-    margin-bottom: 62px;
+    width: 8.4375rem;
+    margin-bottom: 3.875rem;
 }
 
 .enterprises__logo--hp {
-    width: 113px;
-    margin-bottom: 57px;
+    width: 7.0625rem;
+    margin-bottom: 3.5625rem;
 }
 
 .enterprises__logo--vector {
-    width: 105px;
+    width: 6.5625rem;
 }
 
 .download {
-    padding: 140px 32px 170px;
+    padding: 8.75rem 2rem 10.625rem;
     text-align: center;
 }
 
 .download__description {
-    margin: 18px 0 48px;
+    margin: 1.125rem 0 3rem;
 }
 
 .footer {
@@ -293,27 +293,27 @@ body {
 }
 
 .footer__links-main {
-    padding: 52px 0;
+    padding: 3.25rem 0;
 }
 
 .footer__logo {
-    width: 54px;
+    width: 3.375rem;
     margin: 0 auto;
 }
 
 .footer__list {
-    margin: 48px 0 54px;
+    margin: 3rem 0 3.375rem;
 }
 
 .footer__link {
-    font-size: 18px;
+    font-size: 1.125rem;
     display: block;
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
 }
 
 .footer__social {
     display: flex;
-    padding: 0 112px;
+    padding: 0 7rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -333,11 +333,11 @@ body {
      }
 
     .history {
-        padding: 130px 0px 80px;
+        padding: 8.125rem 0rem 5rem;
     }
 
     .history__logo {
-        margin: 0 auto 54px;
+        margin: 0 auto 3.375rem;
     }
 
     .history__title {
@@ -346,8 +346,8 @@ body {
 
     .history__description {
         letter-spacing: 0.0075em;
-        margin: 16px auto 48px;
-        max-width: 695px;
+        margin: 1rem auto 3rem;
+        max-width: 43.4375rem;
     }
 
     .history__btn-group,
@@ -356,30 +356,30 @@ body {
         width: 100%;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 0.75rem;
     }
 
     .download__btn {
-        padding: 16px;
+        padding: 1rem;
         margin: 0;
-        max-width: 228px;
-        font-size: 18px;
+        max-width: 14.25rem;
+        font-size: 1.125rem;
         letter-spacing: 0.04em;
     }
 
     .keep-track {
-        padding: 76px 0px 36px;
+        padding: 4.75rem 0rem 2.25rem;
     }
 
     .keep-track__description {
-        max-width: 720px;
-        margin: 18px auto 80px;
+        max-width: 45rem;
+        margin: 1.125rem auto 5rem;
         letter-spacing: 0.01em;
     }
 
     .keep-track__group {
         display: flex;
-        gap: 78px;
+        gap: 4.875rem;
     }
 
     .keep-track__image {
@@ -390,75 +390,75 @@ body {
 
     .keep-track__list {
         text-align: start;
-        margin-top: 68px;
+        margin-top: 4.25rem;
     }
 
     .keep-track__item-description {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.875rem;
         letter-spacing: 0.0075em;
-        max-width: 350px;
+        max-width: 21.875rem;
     }
 
     .keep-track__item {
-        margin-bottom: 58px;
+        margin-bottom: 3.625rem;
     }
 
     .access {
-        padding: 116px 0px 36px;
+        padding: 7.25rem 0rem 2.25rem;
         text-align: center;
     }
 
     .access__description {
-        margin: 18px auto 100px;
+        margin: 1.125rem auto 6.25rem;
         padding: 0;
-        max-width: 680px;
+        max-width: 42.5rem;
         letter-spacing: 0.0075em;
     }
 
     .workflow {
-        padding: 36px 30px;
+        padding: 2.25rem 1.875rem;
         text-align: center;
     }
 
     .workflow__description {
-        margin: 16px 0 80px;
+        margin: 1rem 0 5rem;
         letter-spacing: 0.0075em;
     }
 
     .workflow__list {
         display: flex;
         justify-content: center;
-        gap: 34px;
+        gap: 2.125rem;
     }
 
     .workflow__item {
-        max-width: 350px;
+        max-width: 21.875rem;
     }
 
     .workflow__item-description {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1rem;
+        line-height: 1.875rem;
         letter-spacing: 0.0075em;
     }
 
     .workflow__item-title {
-        margin: 32px 0 18px;
+        margin: 2rem 0 1.125rem;
     }
 
     .workflow__item-title--text {
-        margin: 40px 0 18px;
+        margin: 2.5rem 0 1.125rem;
     }
     
     .workflow__item-title--preview {
-        margin: 38px 0 18px;
+        margin: 2.375rem 0 1.125rem;
     }
 
     .enterprises {
-        padding: 64px 0 16px;
+        padding: 4rem 0 1rem;
         display: flex;
         align-items: center;
-        max-width: 1110px;
+        max-width: 69.375rem;
         margin: 0 auto;
     }
 
@@ -468,45 +468,45 @@ body {
     }
 
     .enterprises__logo--google {
-        width: 185px;
-        margin: 0 99px 0 0;
+        width: 11.5625rem;
+        margin: 0 6.1875rem 0 0;
     }
 
     .enterprises__logo--ibm {
-        width: 139px;
-        margin: 0 95px 0 0;
+        width: 8.6875rem;
+        margin: 0 5.9375rem 0 0;
     }
 
     .enterprises__logo--microsoft {
-        width: 161px;
-        margin: 0 97px 0 0;
+        width: 10.0625rem;
+        margin: 0 6.0625rem 0 0;
     }
 
     .enterprises__logo--hp {
-        width: 135px;
-        margin: 0 94px 0 0;
+        width: 8.4375rem;
+        margin: 0 5.875rem 0 0;
     }
 
     .enterprises__logo--vector {
-        width: 125px;
+        width: 7.8125rem;
     }
 
     .download__description {
-        margin: 20px auto 48px;
-        max-width: 720px;
+        margin: 1.25rem auto 3rem;
+        max-width: 45rem;
         letter-spacing: 0.0075em;
     }
 
     .download {
-        padding: 140px 0 151px;
+        padding: 8.75rem 0 9.4375rem;
     }
 
     .footer__links-main {
         display: grid;
-        grid-template-columns: 188px 1fr 120px;
-        max-width: 1110px;
+        grid-template-columns: 11.75rem 1fr 7.5rem;
+        max-width: 69.375rem;
         margin: 0 auto;
-        padding: 44px 0 40px;
+        padding: 2.75rem 0 2.5rem;
     }
 
     .footer__logo {
@@ -516,12 +516,12 @@ body {
     .footer__list {
         display: flex;
         text-align: start;
-        gap: 98px;
+        gap: 6.125rem;
         margin: 0;
     }
     
     .footer__link {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .footer__item--install {
@@ -530,7 +530,7 @@ body {
     }
 
     .footer__social {
-        padding: 20px 0;
+        padding: 1.25rem 0;
         align-items: flex-start;
     }
 }
