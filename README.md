@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Clipboard Landing Page | Clean, Pixel-Perfect, and Responsive Build](https://www.frontendmentor.io/solutions/clipboard-landing-page-clean-pixel-perfect-and-responsive-build-daikcpjB_m)
 - Live Site URL: [GitHub Pages](https://outstandinggirl13.github.io/clipboard-landing-page-master/)
 
 ## My process
